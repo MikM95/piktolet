@@ -29,7 +29,7 @@ include('templates/header.php');
       <?php
       if (isset($_POST['name'], $_POST['time'], $_POST['description'], $_POST['picture']))
           {
-            echo "kage";
+            echo "Success! Aktivitet oprettet";
             $name = $_POST['name'];
             $time = $_POST['time'];
             $description = $_POST['description'];

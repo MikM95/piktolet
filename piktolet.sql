@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Oct 22, 2021 at 04:13 PM
+-- Generation Time: Oct 24, 2021 at 04:37 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.1
 
@@ -30,9 +30,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `events` (
   `id` int(11) NOT NULL,
-  `name` varchar(30) NOT NULL,
-  `description` varchar(1000) NOT NULL,
-  `time` time NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `time` datetime NOT NULL,
+  `description` varchar(300) NOT NULL,
   `picture` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -40,9 +40,9 @@ CREATE TABLE `events` (
 -- Dumping data for table `events`
 --
 
-INSERT INTO `events` (`id`, `name`, `description`, `time`, `picture`) VALUES
-(1, 'Stå op', 'tid til at vågne', '07:00:00', 'https://www.elegantthemes.com/blog/wp-content/uploads/2018/11/how-to-wake-up-early.png'),
-(2, 'Morgenmad', 'husk havregryn, ingen chokolade', '07:15:00', 'https://img.kidspot.com.au/DMw-Cw5D/kk/2015/07/16-breakfast-recipe-ideas-your-kids-will-love-605544-2.png');
+INSERT INTO `events` (`id`, `name`, `time`, `description`, `picture`) VALUES
+(1, 'Stå op', '2021-10-25 07:00:00', 'Du skal vågne', 'https://thumbs.dreamstime.com/z/happy-cute-little-kid-girl-wake-up-169737451.jpg'),
+(2, 'Morgenmad', '2021-10-25 07:15:00', 'Husk havregryn', 'https://img.kidspot.com.au/DMw-Cw5D/kk/2015/07/16-breakfast-recipe-ideas-your-kids-will-love-605544-2.png');
 
 --
 -- Indexes for dumped tables
